@@ -1,6 +1,18 @@
-body {
+body, html {
   margin: 0;
   padding: 0;
+  cursor: none;
+}
+
+
+.content-container {
+  margin: 50vh auto 0;
+  text-align: center;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .circle {
@@ -9,6 +21,28 @@ body {
   height: 50px;
   border-radius: 50px;
   position: absolute;
-  left: 0;
-  top: 0;
+  margin: auto;
+  left: 50%;
+  top: 40%;
+  transition: scale 2s;
+  mix-blend-mode: difference;
+}
+
+.circle-hover {
+  background-color: transparent;
+  border: 2px solid red;
+  opacity: 0.5;
+
+
+}
+
+h2 {
+  /* color: blue; */
+  width: 300px;
+  text-align: center;
+}
+
+.h2-hover {
+  /* color: red; */
+  mix-blend-mode: exclusion;
 }
