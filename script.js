@@ -3,6 +3,7 @@ const circleStyle = circle.style
 const textHover = document.querySelector('h2')
 let mouseMoving = false
 
+// when timer is up the circle will scale down
 setInterval(() => {
   if (mouseMoving === true) {
     mouseMoving = false
