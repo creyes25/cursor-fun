@@ -2,13 +2,13 @@ body, html {
   margin: 0;
   padding: 0;
   cursor: none;
+  background-color: rgb(26, 25, 25);
 }
-
 
 .content-container {
   margin: 50vh auto 0;
   text-align: center;
-  /* position: relative; */
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,33 +16,25 @@ body, html {
 }
 
 .circle {
-  background-color: black;
+  background-color: rgb(52, 52, 115);
+  border: 2px solid blueviolet;
+  box-shadow: 2px 2px 5px rgb(123, 48, 123);
   width: 50px;
   height: 50px;
   border-radius: 50px;
   position: absolute;
   margin: auto;
-  left: 50%;
-  top: 40%;
+  left: 0;
+  top: 0;
   transition: scale 2s;
   mix-blend-mode: difference;
 }
 
-.circle-hover {
-  background-color: transparent;
-  border: 2px solid red;
-  opacity: 0.5;
-
-
-}
-
 h2 {
-  /* color: blue; */
-  width: 300px;
-  text-align: center;
-}
-
-.h2-hover {
-  /* color: red; */
-  mix-blend-mode: exclusion;
+  color: rgb(167, 78, 250);
+  text-shadow: 2px 2px 9px rgb(159, 83, 200);
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  mix-blend-mode: difference;
 }
